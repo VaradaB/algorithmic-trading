@@ -45,12 +45,12 @@ We split the dataset 80% for training, and 20% for testing with the dates column
 ### Model Metrics
 We used RMSE with Bayes Linear Regression and Linear Regression gave the lowest RMSE. 
 
-Figure 1(add img,table1)
 
-[Azure Experiment](https://github.com/VaradaB/algorithmic-trading/Images/algotrade1.jpg)
+![Azure Experiment](https://github.com/VaradaB/algorithmic-trading/blob/master/Images/algotrade1.PNG?resize=500,700)
 
 
-[Azure Model Results](https://github.com/VaradaB/algorithmic-trading/Images/algotrade2.jpg)
+
+![Azure Model Results](https://github.com/VaradaB/algorithmic-trading/blob/master/Images/algotrade2.jpg)
 
 
 
@@ -72,7 +72,9 @@ Output: RMS error: 166.74843134433715
 
 In this work we also explore the capability of Recurrent Neural Networks (RNN) to model the prediction across time. We train and evaluate two widely used RNNs - Long-Short Term Memory (LSTM) and Gated Recurrent Unit (GRU). Both the models were trained using Adam optimizer and MSE loss function.
 
-Output: RMS error:
+Output: Testing on scaled data in range (0,1)
+Test accuracy on GRU (MSE loss): 0.0001475
+Test accuracy on LSTM (MSE loss): 0.0001430
 
 ### NLP (Natural Language Processing)
 
@@ -88,16 +90,7 @@ Result: We obtained an accuracy of 53.9% and ROC-AUC of 0.52.
 
 In this model we used count vectorizer and logistic regression for label classification. n-grams are basically a set of co-occurring words within a given window and when computing the n-grams you typically move one word forward. We have tested with 1-gram, 2-gram and 3-gram.
 
-Result: [n-grams](https://github.com/VaradaB/algorithmic-trading/Images/algotrade3.jpg)
-
-n-gram
-Accuracy
-1-gram
-83%
-2-gram
-84%
-3-gram
-85.7%
+Result: ![Accuracy for n-grams](https://github.com/VaradaB/algorithmic-trading/blob/master/Images/algotrade3.jpg)
 
 The ROC-AUC of the model using 3-gram is 0.95.
 
@@ -112,7 +105,6 @@ Result: The Linear Discriminant Analysis score is 94.3% and ROC-AUC is 0.5.
 In this model we used XGBoost algorithm.
 
 Result: The accuracy attained was 94.1% and ROC-AUC of 0.98.
-
 
 
 ## Responsible AI  
