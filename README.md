@@ -1,5 +1,5 @@
 Microsoft Azure Machine Learning Scholarship Project Showcasing Challenge<br/>
-<b>Team:<b/>
+<b>Team:</b>
 Lin C., Somya Dwivedi, Varada.B, Garima Sharma, Gayathri Rajan, tejas, Varsha.Gore, Akhilesh, Lamiae Hana
 
 Problem Statement
