@@ -8,11 +8,11 @@ Lin C., Somya Dwivedi, Varada.B, Garima Sharma, Gayathri Rajan, tejas, Varsha.Go
 Our project showcase challenge is to take an algorithmic approach to stock trading. On Kaggle we found an open data set of the Dow Jones Industrial Average (DJIA),  covering eight years and also the top 27 Reddit news during that same time frame (citation Daily News for Stock Market Prediction). Our problem was to use machine learning models to explain and forecast. Specifically we applied various regression algorithms to the Dow Jones industrial average and used natural language processing (NLP) analysis on the Reddit news to see if it had a predictor influence on whether the Dow Jones close daily price went up, down or stayed the same.
 
 ## Significance of the Problem Statement 
-The stock market is fundamentally a financial institution for companies to raise capital. A share in a stock represents an ownership of a fractional piece of the company. Wall Street, a collective of where stocks are bought, sold, and where capital is raised, is often thought of as having a ‘random walk’ ( Citation: Random Walk Down Wall Street).  This means the underlying data set has statistical attributes that are defined as random. 
+The stock market is fundamentally a financial institution for companies to raise capital. A share in a stock represents an ownership of a fractional piece of the company. Wall Street, a collective of where stocks are bought, sold, and where capital is raised, is often thought of as having a ‘random walk’ (Citation: [Random Walk Down Wall Street](https://en.wikipedia.org/wiki/A_Random_Walk_Down_Wall_Street)). This means the underlying data set has statistical attributes that are defined as random. 
 Financial markets are highly adversarial in nature and non-stationary. They change all the time, driven by political, social, economic or natural events. As human emotions and psychology are the driving force behind investment decisions and Wall Street.  
  
 We believed the top Reddit news is a capable proxy for human emotions. An important component of a stock is it’s price and what it represents. It represents the sum of all future earnings, taken to its current net present value. We are using the DJIA as a proxy for the broad US stock market and it’s stock values. As an index, the DJIA has transparency or openess, meaning it’s value is reported continuously, during open trading hours, visible to anyone with the internet.  The approach of using algorithmic trading is often proprietary, tightly held secrets of an investment company. With the advent of machine learning, it would be interesting to see if the underlying data sets and machine learning models can be exploited to forecast and explain DJIA and reddit news’ influences. 
- 
+
 We were eager to try out our own hands with algorithmic trading using machine learning.
  
 ## Project Implementation 
@@ -81,7 +81,9 @@ Result: We obtained an accuracy of 53.9% and ROC-AUC of 0.52.
 
 In this model we used count vectorizer and logistic regression for label classification. n-grams are basically a set of co-occurring words within a given window and when computing the n-grams you typically move one word forward. We have tested with 1-gram, 2-gram and 3-gram.
 
-Result: ![Accuracy for n-grams](https://github.com/VaradaB/algorithmic-trading/blob/master/Images/algotrade3.jpg)
+Result:
+
+![Accuracy for n-grams](https://github.com/VaradaB/algorithmic-trading/blob/master/Images/algotrade3.jpg)
 
 The ROC-AUC of the model using 3-gram is 0.95.
 
