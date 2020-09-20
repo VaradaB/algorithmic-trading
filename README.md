@@ -29,7 +29,7 @@ Our project has also supported the results done from Azure and through manual co
 As an index, the DJIA has transparency or openess, meaning it’s value is reported continuously, during open trading hours, visible to anyone with the internet. Obtaining real time price quotes allows for an orderly buying and selling of stocks. Based on algorithmic trading, companies will have more predictable valuation when going through initial public offerings and individual investors benefit from quantifying their investment risks. So when these technologies are deployed correctly, they will make investors more efficient so when people invest, they will invest following scientific approaches rather than making wild speculation.
 
 ## Dataset
-We used dataset from Kaggle : - ![Daily News for Stock Market Prediction]
+We used dataset from Kaggle : - [Daily News for Stock Market Prediction](https://www.kaggle.com/aaron7sun/stocknews)
 
 ## Technologies 
 Kaggle, Microsoft Azure ML Studio (Classic), Jupyter Notebook, PyTorch, GitHub 
@@ -57,7 +57,7 @@ Figure 1(add img,table1)
 
 
 
-### Model forecasting using ARIMA - Auto Regressive Integrated Moving Average
+### Stock price forecasting using ARIMA (Auto Regressive Integrated Moving Average) model
 The acronym of ARIMA stands for: AutoRegressive = the model takes advantage of the connection between a predefined number of lagged observations and the current one. 
 Integrated = differencing between raw observations (eg. subtracting observations at different time steps). 
 Moving Average = the model takes advantage of the relationship between the residual error and the observations.
@@ -69,23 +69,29 @@ ARIMA can lead to particularly good results if applied to short time predictions
 So we fit an ARIMA(5,1,0) model. This sets the lag value to 5 for autoregression, 
 uses a difference order of 1 to make the time series stationary, and uses a moving average model of 0.
 
-Output: RMS error:  166.74843134433715
+Output: RMS error: 166.74843134433715
 
-NLP (Natural Language Processing)
+### Stock price forecasting using LSTM (Long Short-Term Memory) model and GRU (Gated Recurrent Units) model
+
+In this work we also explore the capability of Recurrent Neural Networks (RNN) to model the prediction across time. We train and evaluate two widely used RNNs - Long-Short Term Memory (LSTM) and Gated Recurrent Unit (GRU). Both the models were trained using Adam optimizer and MSE loss function.
+
+Output: RMS error:
+
+### NLP (Natural Language Processing)
 
 NLP was used to understand how much the news impacted the stock market. The combination of numerical analysis and NLP analysis gave us fruitful results. The dataset that we obtained from Kaggle consisted of Top 25 news from Reddit WorldNews Channel. The NLP was carried out using three different models. This was done so that we could compare which model gave us better results.
 
-MODEL 1
+#### MODEL 1
 
 We concatenated all the News Headlines of a single day into one. We used TF-IDF (Term Frequency–Inverse Document Frequency) vectorization to extract a feature vector. The classifier we used was a SVM ( Support Vector Machine) with RBF (Radial Basis Function) kernel without optimization of hyperparameters.
 
-RESULT :- We obtained an Accuracy of 53.9% and ROC-AUC  of 0.52 
+Result: We obtained an Accuracy of 53.9% and ROC-AUC  of 0.52 
 
-MODEL 2
+#### MODEL 2
 
 For model 2 we used Count vectorizer and Logistic Regression. n-grams are basically a set of co-occurring words within a given window and when computing the n-grams you typically move one word forward. We have tested with 1-gram,2-gram and 3-gram.
 
-RESULT :- 
+Result: 
 
 n-gram
 Accuracy
@@ -107,6 +113,8 @@ RESULT : -
  The Linear Discriminant Analysis score is 0.943 and ROC -AUC is 0.5
 
 MODEL -4
+
+
 
 ## Responsible AI  
 The predictions results from our models and analysis  will not be used for any wrong purposes. Models used here will perform safely and will be secure. As far as privacy is concerned the dataset we used is an open dataset on Kaggle, which is public. We have stacked stocks from different companies and our models are NOT biased towards any company's stock. All the fair practices have been used in the analysis  and all steps including coding are transparent. Explanations are given in detail and our models are not just black box one. Most importantly our team has included everyone in the team for tasks. Our team is an intentionally diverse team, where members have collaborated from four different time zones across the globe successfully.
