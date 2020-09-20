@@ -31,72 +31,33 @@ As an index, the DJIA has transparency or openess, meaning it’s value is repor
 ## Dataset
 We used dataset from Kaggle : - ![Daily News for Stock Market Prediction]
 
-Azure- Model Architecture, training/validation, and metrics.
+## Technologies 
+Kaggle, Microsoft Azure ML Studio (Classic), Jupyter Notebook, PyTorch, GitHub 
 
-Model Architecture: We applied eight regression models: Bayesian linear regression, decision forest regression, boosted decision tree regression, fast forest quantile regression, neural network regression, ordinal regression and Poisson regression. We compared the output for each. See Figure 1. 
-Model Training: We split the dataset 80% for training, and 20% for testing with the dates column. 
-Model Metrics: We used RMSE with Bayes Linear Regression and Linear Regression gave the lowest RMSE. 
+## Azure- Model Architecture, training/validation, and metrics
 
-Figure 1
+### Model Architecture
+We applied eight regression models: Bayesian linear regression, decision forest regression, boosted decision tree regression, fast forest quantile regression, neural network regression, ordinal regression and Poisson regression. We compared the output for each. See Figure 1. 
 
+### Model Training
+We split the dataset 80% for training, and 20% for testing with the dates column. 
 
-Table 1: RMSE Results by Algorithm
-Dow Jones Index- Regression
-Data split ( 80/20)
-Target 'High' RMSE
-Target 'Close' RMSE
-Notes
-Decision forest Regression
-<01/01/2015
-91
-100
+### Model Metrics
+We used RMSE with Bayes Linear Regression and Linear Regression gave the lowest RMSE. 
+
+Figure 1(add img,table1)
 
 
-Boosted Decision Tree Regression
-<01/01/2015
-121
-121
 
 
-Bayes Linear Regression
-<01/02/2015
-54
-61
 
 
-Linear Regression
-<01/01/2015
-54
-61
 
 
-Poisson Regression
-<01/01/2015
-563
-573
 
 
-Ordinal Regression
-<01/01/2015
-NA
-NA
-Not applicable
-Fast Forest Quantile Regression
-<01/01/2015
-82
-87
-50% quantile loss
-Neural Network Regression
-<01/01/2015
-Error
-Error
-Error in output
 
-
-5. Responsible AI : 
-The predictions results from our models and analysis  will not be used for any wrong purposes. Models used here will perform safely and will be secure. As far as privacy is concerned the dataset we used is an open dataset on Kaggle, which is public. We have stacked stocks from different companies and our models are NOT biased towards any company's stock. All the fair practices have been used in the analysis  and all steps including coding are transparent. Explanations are given in detail and our models are not just black box one. Most importantly our team has included everyone in the team for tasks. Our team is an intentionally diverse team, where members have collaborated from four different time zones across the globe successfully.
-
-Model forecasting using ARIMA - Auto Regressive Integrated Moving Average
+### Model forecasting using ARIMA - Auto Regressive Integrated Moving Average
 The acronym of ARIMA stands for: AutoRegressive = the model takes advantage of the connection between a predefined number of lagged observations and the current one. 
 Integrated = differencing between raw observations (eg. subtracting observations at different time steps). 
 Moving Average = the model takes advantage of the relationship between the residual error and the observations.
@@ -146,3 +107,6 @@ RESULT : -
  The Linear Discriminant Analysis score is 0.943 and ROC -AUC is 0.5
 
 MODEL -4
+
+## Responsible AI  
+The predictions results from our models and analysis  will not be used for any wrong purposes. Models used here will perform safely and will be secure. As far as privacy is concerned the dataset we used is an open dataset on Kaggle, which is public. We have stacked stocks from different companies and our models are NOT biased towards any company's stock. All the fair practices have been used in the analysis  and all steps including coding are transparent. Explanations are given in detail and our models are not just black box one. Most importantly our team has included everyone in the team for tasks. Our team is an intentionally diverse team, where members have collaborated from four different time zones across the globe successfully.
