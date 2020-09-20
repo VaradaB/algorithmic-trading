@@ -1,4 +1,4 @@
-# Microsoft Azure Machine Learning Scholarship Project Showcasing Challenge
+# Algorithmic Trading
 ## Team:
 @Lin C., @Somya Dwivedi, @Varada.B, @Garima Sharma, @Gayathri Rajan, @tejas, @Varsha.Gore, @Akhilesh, @Lamiae Hana
 
