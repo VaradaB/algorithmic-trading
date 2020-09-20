@@ -1,11 +1,11 @@
-Microsoft Azure Machine Learning Scholarship Project Showcasing Challenge<br/>
-<b>Team:</b>
+# Microsoft Azure Machine Learning Scholarship Project Showcasing Challenge
+## Team:
 Lin C., Somya Dwivedi, Varada.B, Garima Sharma, Gayathri Rajan, tejas, Varsha.Gore, Akhilesh, Lamiae Hana
 
-Problem Statement
+## Problem Statement
 Our project showcase challenge is to take an algorithmic approach to stock trading. On Kaggle we found an open data set of the Dow Jones Industrial Average (DJIA),  covering eight years and also the top 27 Reddit news during that same time frame (citation Daily News for Stock Market Prediction). Our problem was to use machine learning models to explain and forecast. Specifically we applied various regression algorithms to the Dow Jones industrial average and used natural language processing (NLP) analysis on the Reddit news to see if it had a predictor influence on whether the Dow Jones close daily price went up, down or stayed the same.
  
-Why is this problem statement an important one? 
+## Significance of the Problem Statement 
 The stock market is fundamentally a financial institution for companies to raise capital. A share in a stock represents an ownership of a fractional piece of the company. Wall Street, a collective of where stocks are bought, sold, and where capital is raised, is often thought of as having a ‘random walk’ ( Citation: Random Walk Down Wall Street).  This means the underlying data set has statistical attributes that are defined as random. 
 Financial markets are highly adversarial in nature and non-stationary. They change all the time, driven by political, social, economic or natural events. As human emotions and psychology are the driving force behind investment decisions and Wall Street.  
  
@@ -13,20 +13,21 @@ We believed the top Reddit news is a capable proxy for human emotions. An import
  
 We were eager to try out our own hands with algorithmic trading using machine learning.
  
+## Project Implementation using Azure
 
-Using Azure for Implementation based on Course Material (30%)
 We used Azure Machine Learning Studio (classic).  Based on our knowledge gained from our class, we applied Azure to our Algorithmic trading, specifically using the regression analysis.    We applied our key learnings to gain insights on how well our models worked to explain DJIA. 
 We used machine learning models in Jupyter notebook with classic preprocessing of the data set, then using text NLP algorithms, time series forecasting (ARIMA) and Recurrent Neural Networks.
 
 
-Innovation and Creativity (20%):
+## Innovation and Creativity 
 This project is an innovative outcome of predicting the volatility of the stock market in terms of its opening, closing, high, low and average volume price combined with the sentiments of top news that affected it. The combination of numerical as well as NLP part has made this project show some fruitful results.
 Our project has also supported the results done from Azure and through manual coding. 
-Impact & Potential (15%) 
+
+## Impact & Potential 
 As an index, the DJIA has transparency or openess, meaning it’s value is reported continuously, during open trading hours, visible to anyone with the internet. Obtaining real time price quotes allows for an orderly buying and selling of stocks. Based on algorithmic trading, companies will have more predictable valuation when going through initial public offerings and individual investors benefit from quantifying their investment risks. So when these technologies are deployed correctly, they will make investors more efficient so when people invest, they will invest following scientific approaches rather than making wild speculation.
 
-Dataset:
-We used dataset from Kaggle : - Daily News for Stock Market Prediction
+## Dataset
+We used dataset from Kaggle : - ![Daily News for Stock Market Prediction]
 
 Azure- Model Architecture, training/validation, and metrics.
 
