@@ -93,6 +93,20 @@ Error in output
 5. Responsible AI : 
 The predictions results from our models and analysis  will not be used for any wrong purposes. Models used here will perform safely and will be secure. As far as privacy is concerned the dataset we used is an open dataset on Kaggle, which is public. We have stacked stocks from different companies and our models are NOT biased towards any company's stock. All the fair practices have been used in the analysis  and all steps including coding are transparent. Explanations are given in detail and our models are not just black box one. Most importantly our team has included everyone in the team for tasks. Our team is an intentionally diverse team, where members have collaborated from four different time zones across the globe successfully.
 
+Model forecasting using ARIMA - Auto Regressive Integrated Moving Average
+The acronym of ARIMA stands for: AutoRegressive = the model takes advantage of the connection between a predefined number of lagged observations and the current one. 
+Integrated = differencing between raw observations (eg. subtracting observations at different time steps). 
+Moving Average = the model takes advantage of the relationship between the residual error and the observations.
+
+The ARIMA model makes use of three main parameters (p,d,q). These are: P — Auto regressive feature of the model or number of lag observations D — Differencing order Q — Moving average feature of the model
+
+ARIMA can lead to particularly good results if applied to short time predictions.
+
+So we fit an ARIMA(5,1,0) model. This sets the lag value to 5 for autoregression, 
+uses a difference order of 1 to make the time series stationary, and uses a moving average model of 0.
+
+Output: RMS error:  166.74843134433715
+
 NLP (Natural Language Processing)
 
 NLP was used to understand how much the news impacted the stock market. The combination of numerical analysis and NLP analysis gave us fruitful results. The dataset that we obtained from Kaggle consisted of Top 25 news from Reddit WorldNews Channel. The NLP was carried out using three different models. This was done so that we could compare which model gave us better results.
