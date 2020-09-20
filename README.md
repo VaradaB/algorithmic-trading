@@ -2,6 +2,8 @@
 ## Team:
 Lin C., Somya Dwivedi, Varada.B, Garima Sharma, Gayathri Rajan, tejas, Varsha.Gore, Akhilesh, Lamiae Hana
 
+![github-small](https://content.fortune.com/wp-content/uploads/2019/10/GettyImages-1158402857.jpg?resize=750,500)
+
 ## Problem Statement
 Our project showcase challenge is to take an algorithmic approach to stock trading. On Kaggle we found an open data set of the Dow Jones Industrial Average (DJIA),  covering eight years and also the top 27 Reddit news during that same time frame (citation Daily News for Stock Market Prediction). Our problem was to use machine learning models to explain and forecast. Specifically we applied various regression algorithms to the Dow Jones industrial average and used natural language processing (NLP) analysis on the Reddit news to see if it had a predictor influence on whether the Dow Jones close daily price went up, down or stayed the same.
  
