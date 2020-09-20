@@ -47,13 +47,10 @@ We used RMSE with Bayes Linear Regression and Linear Regression gave the lowest 
 
 Figure 1(add img,table1)
 
+[Azure Experiment](https://github.com/VaradaB/algorithmic-trading/Images/algotrade1.jpg)
 
 
-
-
-
-
-
+[Azure Model Results](https://github.com/VaradaB/algorithmic-trading/Images/algotrade2.jpg)
 
 
 
@@ -81,17 +78,17 @@ Output: RMS error:
 
 NLP was used to understand how much the news impacted the stock market. The combination of numerical analysis and NLP analysis gave us fruitful results. The dataset that we obtained from Kaggle consisted of Top 25 news from Reddit WorldNews Channel. The NLP was carried out using three different models. This was done so that we could compare which model gave us better results.
 
-#### MODEL 1
+#### Model 1
 
-We concatenated all the News Headlines of a single day into one. We used TF-IDF (Term Frequency–Inverse Document Frequency) vectorization to extract a feature vector. The classifier we used was a SVM ( Support Vector Machine) with RBF (Radial Basis Function) kernel without optimization of hyperparameters.
+We concatenated all the news headlines of a single day into one. We used TF-IDF (Term Frequency–Inverse Document Frequency) vectorization to extract a feature vector. The classifier we used was a SVM (Support Vector Machine) with RBF (Radial Basis Function) kernel without optimization of hyperparameters.
 
-Result: We obtained an Accuracy of 53.9% and ROC-AUC  of 0.52 
+Result: We obtained an accuracy of 53.9% and ROC-AUC of 0.52.
 
-#### MODEL 2
+#### Model 2
 
-For model 2 we used Count vectorizer and Logistic Regression. n-grams are basically a set of co-occurring words within a given window and when computing the n-grams you typically move one word forward. We have tested with 1-gram,2-gram and 3-gram.
+In this model we used count vectorizer and logistic regression for label classification. n-grams are basically a set of co-occurring words within a given window and when computing the n-grams you typically move one word forward. We have tested with 1-gram, 2-gram and 3-gram.
 
-Result: 
+Result: [n-grams](https://github.com/VaradaB/algorithmic-trading/Images/algotrade3.jpg)
 
 n-gram
 Accuracy
@@ -102,17 +99,19 @@ Accuracy
 3-gram
 85.7%
 
-The ROC - AUC of the model is 0.95
+The ROC-AUC of the model using 3-gram is 0.95.
 
-MODEL -3 
+#### Model 3
 
-For model 3 we combined the columns of numerical part (open, high, low, close, volume, adj close) and Sentiment columns (subjectivity, objectivity, positive, neutral, negative) of the dataset.
+For this model we combined the numerical columns (open, high, low, close, volume, adj close) and the sentiment columns (subjectivity, objectivity, positive, neutral, negative) of the dataset.
 
-RESULT : - 
+Result: The Linear Discriminant Analysis score is 94.3% and ROC-AUC is 0.5.
 
- The Linear Discriminant Analysis score is 0.943 and ROC -AUC is 0.5
+#### Model 4
 
-MODEL -4
+In this model we used XGBoost algorithm.
+
+Result: The accuracy attained was 94.1% and ROC-AUC of 0.98.
 
 
 
