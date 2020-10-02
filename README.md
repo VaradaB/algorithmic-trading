@@ -1,6 +1,6 @@
 # Algorithmic Trading
 ## Team:
-@Lin C., @Somya Dwivedi, @Varada.B, @Garima Sharma, @Gayathri Rajan, @tejas, @Varsha.Gore, @Akhilesh, @Lamiae Hana
+[Lin C.](https://github.com/linchao1), [Somya Dwivedi](https://github.com/somyadwivedi-mriirs), [Varada.B](https://github.com/VaradaB), [Garima Sharma](https://github.com/garimasharma4), [Gayathri Rajan](https://github.com/Gayathri-Rajan), [tejas](https://github.com/tejasbangera), [Varsha.Gore](https://github.com/vgdata), [Akhilesh](https://github.com/akhilesh-pandey), [Lamiae Hana](https://github.com/lamiaehana)
 
 ![github-small](https://content.fortune.com/wp-content/uploads/2019/10/GettyImages-1158402857.jpg?resize=750,500)
 
